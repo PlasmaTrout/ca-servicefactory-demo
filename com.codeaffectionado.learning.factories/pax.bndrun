@@ -1,0 +1,43 @@
+-runfw: org.apache.felix.framework;version='[4,5)'
+-runee: JavaSE-1.7
+-runsystemcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+-runbundles:  \
+	org.apache.felix.gogo.command,\
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.shell,\
+	org.apache.felix.configadmin,\
+	org.apache.felix.eventadmin,\
+	org.apache.felix.http.api,\
+	org.objectweb.asm.all,\
+	slf4j.api,\
+	slf4j.simple,\
+	org.apache.xbean.bundleutils,\
+	org.apache.xbean.finder,\
+	org.ops4j.pax.web.pax-web-jetty-bundle,\
+	org.apache.felix.webconsole,\
+	org.ops4j.pax.logging.pax-logging-api,\
+	org.ops4j.pax.web.pax-web-extender-whiteboard,\
+	org.ops4j.pax.web.pax-web-extender-war,\
+	org.apache.felix.scr,\
+	biz.aQute.bnd.annotation,\
+	org.apache.felix.metatype,\
+	org.eclipse.jdt.core.compiler.batch,\
+	org.ops4j.pax.web.pax-web-api,\
+	com.codeaffectionado.learning.factories.api;version=latest,\
+	com.codeaffectionado.learning.factories.greeter;version=latest,\
+	com.codeaffectionado.learning.factories.servlets;version=latest,\
+	javax.servlet;version=2.5.0,\
+	com.codeaffectionado.learning.factories.servlets2;version=latest,\
+	com.codeaffectionado.learning.factories.uppercase;version=latest
+
+-runrequires:\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)'
+-runrepos:  \
+	Workspace,\
+	Bndtools Hub,\
+	Local,\
+	Release

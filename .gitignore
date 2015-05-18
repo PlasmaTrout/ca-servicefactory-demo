@@ -1,0 +1,20 @@
+# Eclipse workspace metadata
+/.metadata
+/External Plug-in Libraries
+
+# Eclipse compiler output
+/*feature/compile*.xml
+
+# vi detritus
+*.swp
+*~
+
+# Mac OS detritus
+.DS_Store
+
+# Bnd stuff
+/cnf/eclipse-*/bnd.index
+
+/.gradle/
+/reports/
+/generated/

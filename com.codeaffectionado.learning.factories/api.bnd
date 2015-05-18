@@ -1,0 +1,7 @@
+Bundle-Version: 1.0
+Import-Package:  \
+	*
+Service-Component:  \
+	*
+Export-Package:  \
+	com.codeaffectionado.learning.factories.api
