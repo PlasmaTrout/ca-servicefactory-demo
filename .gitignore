@@ -8,7 +8,7 @@
 # vi detritus
 *.swp
 *~
-
+/.recommenders/
 # Mac OS detritus
 .DS_Store
 
